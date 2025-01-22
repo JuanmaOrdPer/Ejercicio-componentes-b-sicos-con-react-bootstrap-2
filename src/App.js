@@ -14,7 +14,6 @@ const App = () => {
       const data = await response.json();
       setPeliculas(data);
 
-      // Procesar categorías y directores únicos
       const categoriasUnicas = new Set();
       const directoresUnicos = new Set();
 
@@ -27,7 +26,7 @@ const App = () => {
           categoriasUnicas.add(categoria);
         }
 
-        // Añadir directores
+  
         directoresUnicos.add(pelicula.director);
       });
 
